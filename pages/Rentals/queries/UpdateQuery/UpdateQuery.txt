@@ -1,0 +1,8 @@
+UPDATE public."rentals" SET
+		"rental_type" = '{{update_form.fieldState.rental_type.isVisible ? update_form.formData.rental_type : update_form.sourceData.rental_type}}',
+		"contract_id" = '{{update_form.fieldState.contract_id.isVisible ? update_form.formData.contract_id : update_form.sourceData.contract_id}}',
+    "car_id" = '{{update_form.fieldState.car_id.isVisible ? update_form.formData.car_id : update_form.sourceData.car_id}}',
+		"rental_description" = '{{update_form.fieldState.rental_description.isVisible ? update_form.formData.rental_description : update_form.sourceData.rental_description}}',
+		"rental_car_pickup" = '{{update_form.fieldState.rental_car_pickup.isVisible ? update_form.formData.rental_car_pickup : update_form.sourceData.rental_car_pickup}}',
+		"rental_car_return" = '{{update_form.fieldState.rental_car_return.isVisible ? update_form.formData.rental_car_return : update_form.sourceData.rental_car_return}}'
+WHERE "rental_id" = {{data_table.selectedRow.rental_id}};

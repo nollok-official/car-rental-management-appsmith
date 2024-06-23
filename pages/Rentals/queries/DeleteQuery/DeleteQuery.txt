@@ -1,0 +1,2 @@
+DELETE FROM public."rentals"
+  WHERE "rental_id" = {{data_table.triggeredRow.rental_id}};
