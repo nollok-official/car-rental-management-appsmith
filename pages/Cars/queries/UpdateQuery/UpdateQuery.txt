@@ -1,0 +1,13 @@
+UPDATE public."cars" SET
+		"plate_no" = '{{update_form.fieldState.plate_no.isVisible ? update_form.formData.plate_no : update_form.sourceData.plate_no}}',
+		"plate_type" = '{{update_form.fieldState.plate_type.isVisible ? update_form.formData.plate_type : update_form.sourceData.plate_type}}',
+    "make" = '{{update_form.fieldState.make.isVisible ? update_form.formData.make : update_form.sourceData.make}}',
+		"model" = '{{update_form.fieldState.model.isVisible ? update_form.formData.model : update_form.sourceData.model}}',
+		"year" = '{{update_form.fieldState.year.isVisible ? update_form.formData.year : update_form.sourceData.year}}',
+		"chassis_no" = '{{update_form.fieldState.chassis_no.isVisible ? update_form.formData.chassis_no : update_form.sourceData.chassis_no}}',
+		"engine_no" = '{{update_form.fieldState.engine_no.isVisible ? update_form.formData.engine_no : update_form.sourceData.engine_no}}',
+		"car_type" = '{{update_form.fieldState.car_type.isVisible ? update_form.formData.car_type : update_form.sourceData.car_type}}',
+		"seat_capacity" = '{{update_form.fieldState.seat_capacity.isVisible ? update_form.formData.seat_capacity : update_form.sourceData.seat_capacity}}',
+		"rental_price" = '{{update_form.fieldState.rental_price.isVisible ? update_form.formData.rental_price : update_form.sourceData.rental_price}}',
+		"color" = '{{update_form.fieldState.color.isVisible ? update_form.formData.color : update_form.sourceData.color}}'
+	WHERE "car_id" = {{data_table.selectedRow.car_id}};

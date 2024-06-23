@@ -5,11 +5,7 @@
       "isDefault": true
     },
     {
-      "id": "Page1",
-      "isDefault": false
-    },
-    {
-      "id": "Page2",
+      "id": "Cars",
       "isDefault": false
     }
   ],
@@ -19,7 +15,7 @@
   "color": "#FFEFDB",
   "icon": "car",
   "unpublishedAppLayout": {
-    "type": "FLUID"
+    "type": "DESKTOP"
   },
   "publishedAppLayout": {
     "type": "FLUID"

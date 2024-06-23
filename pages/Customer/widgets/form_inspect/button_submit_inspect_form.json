@@ -4,7 +4,7 @@
     "boxShadow": "none",
     "mobileBottomRow": 37,
     "widgetName": "button_submit_inspect_form",
-    "onClick": "{{sql_update_customer_general.run({\n  // \"key\": \"value\",\n  \"customer_id\": appsmith.store.selected_customer_id\n}).then(() => {\n  showAlert('Customer details updated for  customer with id: ' + appsmith.store.selected_customer_id, 'success');\n  // \"key\": \"value\",\n  sql_fetch_all_customers.run();\n});}}",
+    "onClick": "{{showModal(modal_confirm_edit_customer.name);}}",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "dynamicPropertyPathList": [],
     "displayName": "Button",

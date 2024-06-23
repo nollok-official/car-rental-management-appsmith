@@ -1,0 +1,26 @@
+INSERT INTO public."cars" (
+	"plate_no",
+	"plate_type",
+	"make",
+	"model",
+	"year",
+	"chassis_no",
+	"engine_no",
+	"car_type",
+	"seat_capacity",
+	"rental_price",
+	"color"
+)
+VALUES (
+	'{{insert_form.formData.plate_no}}',
+	'{{insert_form.formData.plate_type}}',
+	'{{insert_form.formData.make}}',
+	'{{insert_form.formData.model}}',
+	'{{insert_form.formData.year}}',
+	'{{insert_form.formData.chassis_no}}',
+	'{{insert_form.formData.engine_no}}',
+	'{{insert_form.formData.car_type}}',
+	'{{insert_form.formData.seat_capacity}}',
+	'{{insert_form.formData.rental_price}}',
+	'{{insert_form.formData.color}}'
+);
