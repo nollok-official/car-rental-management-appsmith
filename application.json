@@ -19,7 +19,7 @@
   "color": "#FFEFDB",
   "icon": "car",
   "unpublishedAppLayout": {
-    "type": "DESKTOP"
+    "type": "FLUID"
   },
   "publishedAppLayout": {
     "type": "DESKTOP"

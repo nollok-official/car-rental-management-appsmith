@@ -70,6 +70,6 @@
     "mobileLeftColumn": 25,
     "maxDynamicHeight": 9000,
     "iconAlign": "left",
-    "defaultText": "{{CustomersTable.selectedRow.passport}}",
+    "defaultText": "{{customer_table.selectedRow.passport}}",
     "minDynamicHeight": 4
 }

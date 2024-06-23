@@ -10,7 +10,7 @@
         "label"
     ],
     "topRow": 0,
-    "bottomRow": 5,
+    "bottomRow": 8,
     "type": "TEXT_WIDGET",
     "hideCard": false,
     "mobileRightColumn": 37,
@@ -26,7 +26,7 @@
     ],
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "Total",
+    "text": "Total ",
     "key": "5moa1a2e5s",
     "isDeprecated": false,
     "rightColumn": 49,

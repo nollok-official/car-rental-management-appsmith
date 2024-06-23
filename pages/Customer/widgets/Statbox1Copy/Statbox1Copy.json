@@ -9,7 +9,7 @@
     "iconSVG": "/static/media/icon.457e4e1b6b350401fe7e9adf74ba03ae.svg",
     "searchTags": ["statbox"],
     "topRow": 0,
-    "bottomRow": 12,
+    "bottomRow": 15,
     "parentRowSpace": 10,
     "type": "STATBOX_WIDGET",
     "hideCard": false,
@@ -29,7 +29,7 @@
         "widgetName": "Canvas1Copy",
         "displayName": "Canvas",
         "topRow": 0,
-        "bottomRow": 120,
+        "bottomRow": 150,
         "parentRowSpace": 1,
         "type": "CANVAS_WIDGET",
         "canExtend": false,
@@ -98,6 +98,6 @@
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "mobileLeftColumn": 0,
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 12,
+    "originalBottomRow": 15,
     "minDynamicHeight": 10
 }

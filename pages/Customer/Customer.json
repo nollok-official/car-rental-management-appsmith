@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 950,
+          "bottomRow": 990,
           "containerStyle": "none",
           "snapRows": 124,
           "parentRowSpace": 1,
@@ -29,8 +29,18 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Customer_sql_fetch_all_custo_with_pf",
-              "name": "sql_fetch_all_custo_with_pf",
+              "id": "Customer_sql_fetch_all_customers",
+              "name": "sql_fetch_all_customers",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Customer_sql_fetch_customer_count",
+              "name": "sql_fetch_customer_count",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],

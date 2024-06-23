@@ -1,0 +1,8 @@
+UPDATE public."customers" SET
+    "name" = '{{form_inspect.data.input_name}}',
+    "qid" = '{{form_inspect.data.input_qid}}',
+    "passport" = '{{form_inspect.data.input_passport}}',
+    "dob" = '{{form_inspect.data.input_dob}}',
+    "gender" = '{{form_inspect.data.input_gender}}',
+    "nationality" = '{{form_inspect.data.input_nationality}}'
+  WHERE customer_id = {{this.params.customer_id}};

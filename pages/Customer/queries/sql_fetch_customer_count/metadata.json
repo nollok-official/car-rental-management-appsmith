@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "sql_fetch_all_custo_with_pf",
+    "name": "sql_fetch_customer_count",
     "datasource": {
       "name": "CarDB",
       "pluginId": "postgres-plugin",
@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT \n    c.customer_id,\n    c.name,\n    c.qid,\n    c.passport,\n    c.dob,\n    c.nationality,\n    c.gender,\n    c.customer_joined_date,\n    c.customer_created_at,\n    cd.document_content AS profile_pic\nFROM \n    customers c\nLEFT JOIN \n    customer_documents cd ON cd.customer_id = c.customer_id \nAND cd.document_type = 'pfp'\n\n\n;\n",
+      "body": "SELECT COUNT(*) from customers;",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -26,7 +26,7 @@
         }
       ]
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
@@ -36,9 +36,9 @@
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2024-06-23T15:04:59Z"
+    "createdAt": "2024-06-23T11:20:02Z"
   },
-  "id": "Customer_sql_fetch_all_custo_with_pf",
+  "id": "Customer_sql_fetch_customer_count",
   "deleted": false,
-  "gitSyncId": "6675df3df6b08f7df4ca1fbd_8d838b8e-06c4-4562-97be-d75d6762ca0c"
+  "gitSyncId": "6675df3df6b08f7df4ca1fbd_26d8d6f3-ecb0-46af-9cec-de2a472e8517"
 }

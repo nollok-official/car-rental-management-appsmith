@@ -1,7 +1,7 @@
 {
     "needsErrorInfo": false,
-    "mobileBottomRow": 8,
-    "widgetName": "Text2",
+    "mobileBottomRow": 5,
+    "widgetName": "Text8",
     "displayName": "Text",
     "iconSVG": "/static/media/icon.a55b701a2ae86aa2c6718ecb7b4083f0.svg",
     "searchTags": [
@@ -9,11 +9,11 @@
         "paragraph",
         "label"
     ],
-    "topRow": 8,
-    "bottomRow": 13,
+    "topRow": 1,
+    "bottomRow": 7,
     "type": "TEXT_WIDGET",
     "hideCard": false,
-    "mobileRightColumn": 37,
+    "mobileRightColumn": 25.5,
     "animateLoading": true,
     "overflow": "NONE",
     "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
@@ -22,19 +22,18 @@
     "dynamicBindingPathList": [
         {"key": "truncateButtonColor"},
         {"key": "fontFamily"},
-        {"key": "borderRadius"},
-        {"key": "text"}
+        {"key": "borderRadius"}
     ],
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "{{sql_fetch_customer_count.data[0].count}}",
-    "key": "5moa1a2e5s",
+    "text": "Inspect / Edit Details",
+    "key": "wne8z48tvd",
     "isDeprecated": false,
-    "rightColumn": 48,
+    "rightColumn": 50,
     "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
     "textAlign": "CENTER",
     "dynamicHeight": "AUTO_HEIGHT",
-    "widgetId": "xboj8ymnga",
+    "widgetId": "82a1qtqzy5",
     "onCanvasUI": {
         "focusBGCSSVar": "--on-canvas-ui-widget-focus",
         "disableParentSelection": false,
@@ -47,20 +46,20 @@
     "fontStyle": "BOLD",
     "textColor": "#231F20",
     "version": 1,
-    "parentId": "6yo2bd5hmj",
+    "parentId": "tug2khubu4",
     "tags": [
         "Suggested",
         "Content"
     ],
     "renderMode": "CANVAS",
     "isLoading": false,
-    "mobileTopRow": 4,
+    "mobileTopRow": 1,
     "responsiveBehavior": "fill",
-    "originalTopRow": 5,
+    "originalTopRow": 1,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "mobileLeftColumn": 1,
+    "mobileLeftColumn": 1.5,
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 10,
-    "fontSize": "1.875rem",
+    "originalBottomRow": 5,
+    "fontSize": "1.25rem",
     "minDynamicHeight": 4
 }
