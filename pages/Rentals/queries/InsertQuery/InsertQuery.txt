@@ -1,0 +1,14 @@
+INSERT INTO public."rentals" (
+	"rental_type",
+	"contract_id",
+	"car_id",
+	"rental_description",
+	"rental_car_pickup",
+	"rental_car_return")
+VALUES (
+	'{{insert_form.formData.rental_type}}',
+	'{{insert_form.formData.contract_id}}',
+	'{{insert_form.formData.car_id}}',
+	'{{insert_form.formData.rental_description}}',
+	'{{insert_form.formData.rental_car_pickup}}',
+	'{{insert_form.formData.rental_car_return}}');

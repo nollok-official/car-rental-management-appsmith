@@ -19,6 +19,10 @@
     {
       "id": "Contracts",
       "isDefault": false
+    },
+    {
+      "id": "Rentals",
+      "isDefault": false
     }
   ],
   "viewMode": false,
