@@ -1,0 +1,2 @@
+SELECT * FROM customer_contacts 
+WHERE customer_id = {{this.params.customerID}};

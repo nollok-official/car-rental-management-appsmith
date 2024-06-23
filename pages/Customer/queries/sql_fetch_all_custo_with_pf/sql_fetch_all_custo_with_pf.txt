@@ -1,0 +1,19 @@
+SELECT 
+    c.customer_id,
+    c.name,
+    c.qid,
+    c.passport,
+    c.dob,
+    c.nationality,
+    c.gender,
+    c.customer_joined_date,
+    c.customer_created_at,
+    cd.document_content AS profile_pic
+FROM 
+    customers c
+LEFT JOIN 
+    customer_documents cd ON cd.customer_id = c.customer_id 
+AND cd.document_type = 'pfp'
+
+
+;

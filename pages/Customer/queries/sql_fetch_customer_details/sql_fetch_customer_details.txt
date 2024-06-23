@@ -1,0 +1,2 @@
+SELECT * FROM public.customers 
+where customer_id = {{this.params.customerID}};
