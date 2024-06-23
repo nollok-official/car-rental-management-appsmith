@@ -1,0 +1,13 @@
+UPDATE public."contracts" SET
+		"contract_car_type" = '{{update_form.fieldState.contract_car_type.isVisible ? update_form.formData.contract_car_type : update_form.sourceData.contract_car_type}}',
+		"customer_id" = '{{update_form.fieldState.customer_id.isVisible ? update_form.formData.customer_id : update_form.sourceData.customer_id}}',
+    "contract_date" = '{{update_form.fieldState.contract_date.isVisible ? update_form.formData.contract_date : update_form.sourceData.contract_date}}',
+		"contract_car_make" = '{{update_form.fieldState.contract_car_make.isVisible ? update_form.formData.contract_car_make : update_form.sourceData.contract_car_make}}',
+		"contract_car_model" = '{{update_form.fieldState.contract_car_model.isVisible ? update_form.formData.contract_car_model : update_form.sourceData.contract_car_model}}',
+		"contract_rental_type" = '{{update_form.fieldState.contract_rental_type.isVisible ? update_form.formData.contract_rental_type : update_form.sourceData.contract_rental_type}}',
+		"contract_rental_price" = '{{update_form.fieldState.contract_rental_price.isVisible ? update_form.formData.contract_rental_price : update_form.sourceData.contract_rental_price}}',
+		"contract_deposit_amount" = '{{update_form.fieldState.contract_deposit_amount.isVisible ? update_form.formData.contract_deposit_amount : update_form.sourceData.contract_deposit_amount}}',
+		"contract_deposit_type" = '{{update_form.fieldState.contract_deposit_type.isVisible ? update_form.formData.contract_deposit_type : update_form.sourceData.contract_deposit_type}}',
+		"contract_lease_period_in_days" = '{{update_form.fieldState.contract_lease_period_in_days.isVisible ? update_form.formData.contract_lease_period_in_days : update_form.sourceData.contract_lease_period_in_days}}',
+		"contract_description" = '{{update_form.fieldState.contract_description.isVisible ? update_form.formData.contract_description : update_form.sourceData.contract_description}}'
+	WHERE "contract_id" = {{data_table.selectedRow.contract_id}};

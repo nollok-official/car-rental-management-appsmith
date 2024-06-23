@@ -1,0 +1,26 @@
+INSERT INTO public."violations" (
+	"government_violation_id",
+	"car_id",
+	"violation_date",
+	"violation_type",
+	"violation_location",
+	"violation_amount",
+	"violation_status",
+	"violation_payment_date",
+	"violation_payment_amount",
+	"violation_paid_by",
+	"violation_payment_receipt"
+)
+VALUES (
+	'{{insert_form.formData.government_violation_id}}',
+	'{{insert_form.formData.car_id}}',
+	'{{insert_form.formData.violation_date}}',
+	'{{insert_form.formData.violation_type}}',
+	'{{insert_form.formData.violation_location}}',
+	'{{insert_form.formData.violation_amount}}',
+	'{{insert_form.formData.violation_status}}',
+	'{{insert_form.formData.violation_payment_date}}',
+	'{{insert_form.formData.violation_payment_amount}}',
+	'{{insert_form.formData.violation_paid_by}}',
+	'{{insert_form.formData.violation_payment_receipt}}'
+);

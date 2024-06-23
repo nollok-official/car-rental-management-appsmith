@@ -1,0 +1,18 @@
+INSERT INTO public."maintenance" (
+	"maintenance_type",
+	"car_id",
+	"maintenance_date",
+	"maintenance_description",
+	"maintenance_cost",
+	"maintenance_reason",
+	"maintenance_receipt",
+	"paid_by")
+VALUES (
+	'{{insert_form.formData.maintenance_type}}',
+	'{{insert_form.formData.car_id}}',
+	'{{insert_form.formData.maintenance_date}}',
+	'{{insert_form.formData.maintenance_description}}',
+	'{{insert_form.formData.maintenance_cost}}',
+	'{{insert_form.formData.maintenance_reason}}',
+	'{{insert_form.formData.maintenance_receipt}}',
+	'{{insert_form.formData.paid_by}}');

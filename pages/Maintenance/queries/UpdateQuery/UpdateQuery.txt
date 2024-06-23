@@ -1,0 +1,10 @@
+UPDATE public."maintenance" SET
+		"maintenance_type" = '{{update_form.fieldState.maintenance_type.isVisible ? update_form.formData.maintenance_type : update_form.sourceData.maintenance_type}}',
+		"car_id" = '{{update_form.fieldState.car_id.isVisible ? update_form.formData.car_id : update_form.sourceData.car_id}}',
+    "maintenance_date" = '{{update_form.fieldState.maintenance_date.isVisible ? update_form.formData.maintenance_date : update_form.sourceData.maintenance_date}}',
+		"maintenance_description" = '{{update_form.fieldState.maintenance_description.isVisible ? update_form.formData.maintenance_description : update_form.sourceData.maintenance_description}}',
+		"maintenance_cost" = '{{update_form.fieldState.maintenance_cost.isVisible ? update_form.formData.maintenance_cost : update_form.sourceData.maintenance_cost}}',
+		"maintenance_reason" = '{{update_form.fieldState.maintenance_reason.isVisible ? update_form.formData.maintenance_reason : update_form.sourceData.maintenance_reason}}',
+		"maintenance_receipt" = '{{update_form.fieldState.maintenance_receipt.isVisible ? update_form.formData.maintenance_receipt : update_form.sourceData.maintenance_receipt}}',
+		"paid_by" = '{{update_form.fieldState.paid_by.isVisible ? update_form.formData.paid_by : update_form.sourceData.paid_by}}'
+WHERE "maintenance_id" = {{data_table.selectedRow.maintenance_id}};

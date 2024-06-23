@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Cars",
-    "slug": "cars",
+    "name": "Violations",
+    "slug": "violations",
     "layouts": [
       {
         "viewMode": false,
@@ -29,16 +29,16 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Cars_SelectQuery",
+              "id": "Violations_SelectQuery",
               "name": "SelectQuery",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
-                "data_table.sortOrder.order || 'DESC'",
+                "data_table.sortOrder.order || 'ASC'",
                 "data_table.pageSize",
                 "data_table.searchText || \"\"",
-                "data_table.sortOrder.column || 'car_id'",
-                "(data_table.pageNo - 1) * data_table.pageSize"
+                "(data_table.pageNo - 1) * data_table.pageSize",
+                "data_table.sortOrder.column || 'violation_id'"
               ],
               "timeoutInMillisecond": 10000
             }
@@ -46,7 +46,7 @@
         ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "Cars",
+        "id": "Violations",
         "deleted": false,
         "policies": [],
         "userPermissions": []
@@ -57,5 +57,5 @@
     "isHidden": false
   },
   "deleted": false,
-  "gitSyncId": "667848c013beec4c9aa91a69_04c2f4b6-d1ea-4c61-b687-9e0f25f5ac7e"
+  "gitSyncId": "667848c013beec4c9aa91a69_8439106d-2866-4c17-88a9-646149f39bfd"
 }

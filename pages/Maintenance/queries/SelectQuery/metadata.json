@@ -13,12 +13,12 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Cars",
+    "pageId": "Maintenance",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT * FROM public.\"cars\"\nWHERE \"plate_no\" ilike '%{{data_table.searchText || \"\"}}%'\nORDER BY \"{{data_table.sortOrder.column || 'car_id'}}\" {{data_table.sortOrder.order || 'DESC'}}\nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};",
+      "body": "SELECT * FROM public.\"maintenance\"\nORDER BY \"{{data_table.sortOrder.column || 'maintenance_date'}}\" {{data_table.sortOrder.order || 'ASC'}}\n\nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -38,17 +38,16 @@
     "jsonPathKeys": [
       "(data_table.pageNo - 1) * data_table.pageSize",
       "data_table.pageSize",
-      "data_table.searchText || \"\"",
-      "data_table.sortOrder.column || 'car_id'",
-      "data_table.sortOrder.order || 'DESC'"
+      "data_table.sortOrder.column || 'maintenance_date'",
+      "data_table.sortOrder.order || 'ASC'"
     ],
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2024-06-23T18:37:48Z"
+    "createdAt": "2024-06-23T19:20:20Z"
   },
-  "id": "Cars_SelectQuery",
+  "id": "Maintenance_SelectQuery",
   "deleted": false,
-  "gitSyncId": "667848c013beec4c9aa91a69_97d9abe9-3a34-4aa0-98a2-7fce76b74762"
+  "gitSyncId": "667848c013beec4c9aa91a69_4b09964a-97dd-4bcb-8a5e-59c5b24b6361"
 }

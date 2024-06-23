@@ -1,5 +1,5 @@
 SELECT * FROM public."cars"
 WHERE "plate_no" ilike '%{{data_table.searchText || ""}}%'
-ORDER BY "{{data_table.sortOrder.column || 'car_id'}}" {{data_table.sortOrder.order || 'ASC'}}
+ORDER BY "{{data_table.sortOrder.column || 'car_id'}}" {{data_table.sortOrder.order || 'DESC'}}
 LIMIT {{data_table.pageSize}}
 OFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};

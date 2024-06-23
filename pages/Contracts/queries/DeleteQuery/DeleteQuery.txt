@@ -1,0 +1,2 @@
+DELETE FROM public."contracts"
+  WHERE "contract_id" = {{data_table.triggeredRow.contract_id}};

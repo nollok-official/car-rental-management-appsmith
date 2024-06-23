@@ -1,0 +1,5 @@
+SELECT * FROM public."maintenance"
+ORDER BY "{{data_table.sortOrder.column || 'maintenance_date'}}" {{data_table.sortOrder.order || 'ASC'}}
+
+LIMIT {{data_table.pageSize}}
+OFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};

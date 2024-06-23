@@ -1,0 +1,26 @@
+INSERT INTO public."contracts" (
+	"contract_car_type",
+	"customer_id",
+	"contract_date",
+	"contract_car_make",
+	"contract_car_model",
+	"contract_rental_type",
+	"contract_rental_price",
+	"contract_deposit_amount",
+	"contract_deposit_type",
+	"contract_lease_period_in_days",
+	"contract_description"
+)
+VALUES (
+	'{{insert_form.formData.contract_car_type}}',
+	'{{insert_form.formData.customer_id}}',
+	'{{insert_form.formData.contract_date}}',
+	'{{insert_form.formData.contract_car_make}}',
+	'{{insert_form.formData.contract_car_model}}',
+	'{{insert_form.formData.contract_rental_type}}',
+	'{{insert_form.formData.contract_rental_price}}',
+	'{{insert_form.formData.contract_deposit_amount}}',
+	'{{insert_form.formData.contract_deposit_type}}',
+	'{{insert_form.formData.contract_lease_period_in_days}}',
+	'{{insert_form.formData.contract_description}}'
+);

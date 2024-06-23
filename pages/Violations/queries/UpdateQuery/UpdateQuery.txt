@@ -1,0 +1,13 @@
+UPDATE public."violations" SET
+		"government_violation_id" = '{{update_form.fieldState.government_violation_id.isVisible ? update_form.formData.government_violation_id : update_form.sourceData.government_violation_id}}',
+		"car_id" = '{{update_form.fieldState.car_id.isVisible ? update_form.formData.car_id : update_form.sourceData.car_id}}',
+    "violation_date" = '{{update_form.fieldState.violation_date.isVisible ? update_form.formData.violation_date : update_form.sourceData.violation_date}}',
+		"violation_type" = '{{update_form.fieldState.violation_type.isVisible ? update_form.formData.violation_type : update_form.sourceData.violation_type}}',
+		"violation_location" = '{{update_form.fieldState.violation_location.isVisible ? update_form.formData.violation_location : update_form.sourceData.violation_location}}',
+		"violation_amount" = '{{update_form.fieldState.violation_amount.isVisible ? update_form.formData.violation_amount : update_form.sourceData.violation_amount}}',
+		"violation_status" = '{{update_form.fieldState.violation_status.isVisible ? update_form.formData.violation_status : update_form.sourceData.violation_status}}',
+		"violation_payment_date" = '{{update_form.fieldState.violation_payment_date.isVisible ? update_form.formData.violation_payment_date : update_form.sourceData.violation_payment_date}}',
+		"violation_payment_amount" = '{{update_form.fieldState.violation_payment_amount.isVisible ? update_form.formData.violation_payment_amount : update_form.sourceData.violation_payment_amount}}',
+		"violation_paid_by" = '{{update_form.fieldState.violation_paid_by.isVisible ? update_form.formData.violation_paid_by : update_form.sourceData.violation_paid_by}}',
+		"violation_payment_receipt" = '{{update_form.fieldState.violation_payment_receipt.isVisible ? update_form.formData.violation_payment_receipt : update_form.sourceData.violation_payment_receipt}}'
+	WHERE "violation_id" = {{data_table.selectedRow.violation_id}};

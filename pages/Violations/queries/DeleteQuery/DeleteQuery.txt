@@ -1,0 +1,2 @@
+DELETE FROM public."violations"
+  WHERE "violation_id" = {{data_table.triggeredRow.violation_id}};

@@ -7,6 +7,18 @@
     {
       "id": "Cars",
       "isDefault": false
+    },
+    {
+      "id": "Maintenance",
+      "isDefault": false
+    },
+    {
+      "id": "Violations",
+      "isDefault": false
+    },
+    {
+      "id": "Contracts",
+      "isDefault": false
     }
   ],
   "viewMode": false,
@@ -18,7 +30,7 @@
     "type": "DESKTOP"
   },
   "publishedAppLayout": {
-    "type": "FLUID"
+    "type": "DESKTOP"
   },
   "unpublishedCustomJSLibs": [
     {

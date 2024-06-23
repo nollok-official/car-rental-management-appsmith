@@ -13,12 +13,12 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Cars",
+    "pageId": "Violations",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT * FROM public.\"cars\"\nWHERE \"plate_no\" ilike '%{{data_table.searchText || \"\"}}%'\nORDER BY \"{{data_table.sortOrder.column || 'car_id'}}\" {{data_table.sortOrder.order || 'DESC'}}\nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};",
+      "body": "SELECT * FROM public.\"violations\"\nWHERE \"government_violation_id\" ilike '%{{data_table.searchText || \"\"}}%'\nORDER BY \"{{data_table.sortOrder.column || 'violation_id'}}\" {{data_table.sortOrder.order || 'ASC'}}\nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -27,11 +27,6 @@
       ]
     },
     "executeOnLoad": true,
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
@@ -39,16 +34,16 @@
       "(data_table.pageNo - 1) * data_table.pageSize",
       "data_table.pageSize",
       "data_table.searchText || \"\"",
-      "data_table.sortOrder.column || 'car_id'",
-      "data_table.sortOrder.order || 'DESC'"
+      "data_table.sortOrder.column || 'violation_id'",
+      "data_table.sortOrder.order || 'ASC'"
     ],
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2024-06-23T18:37:48Z"
+    "createdAt": "2024-06-23T20:45:59Z"
   },
-  "id": "Cars_SelectQuery",
+  "id": "Violations_SelectQuery",
   "deleted": false,
-  "gitSyncId": "667848c013beec4c9aa91a69_97d9abe9-3a34-4aa0-98a2-7fce76b74762"
+  "gitSyncId": "667848c013beec4c9aa91a69_6c8d5bf3-f3a0-4939-8d17-2dec1c216af6"
 }
