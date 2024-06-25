@@ -1,8 +1,0 @@
-SELECT c.*, cd.document_type, cd.document_name
-FROM public.customers c
-LEFT JOIN 
-public.customer_documents cd
-on cd.customer_id = c.customer_id
-ORDER BY c.customer_joined_date DESC
-LIMIT {{this.params.pageSize}}
-Offset {{(this.params.pageNo-1) * this.params.pageSize}};

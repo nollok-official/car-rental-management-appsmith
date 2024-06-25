@@ -1,0 +1,4 @@
+SELECT * 
+FROM public."car_documents" 
+WHERE customer_id = {{this.params.customer_id}}
+AND document_type = {{this.params.document_type}};

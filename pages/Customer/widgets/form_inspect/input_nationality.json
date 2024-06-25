@@ -6,7 +6,7 @@
     "labelWidth": "11",
     "type": "SELECT_WIDGET",
     "serverSideFiltering": false,
-    "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( customer_table.selectedRow.nationality))(input_nationality.options, input_nationality.serverSideFiltering) }}",
+    "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( customers_table.selectedRow.nationality))(input_nationality.options, input_nationality.serverSideFiltering) }}",
     "animateLoading": true,
     "leftColumn": 23,
     "dynamicBindingPathList": [

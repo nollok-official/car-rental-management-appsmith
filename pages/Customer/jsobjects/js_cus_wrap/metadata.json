@@ -1,6 +1,6 @@
 {
   "unpublishedCollection": {
-    "name": "customers",
+    "name": "js_cus_wrap",
     "pageId": "Customer",
     "pluginId": "js-plugin",
     "pluginType": "JS",
@@ -8,13 +8,17 @@
     "archivedActions": [],
     "variables": [
       {
-        "name": "data",
+        "name": "myVar1",
         "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
       }
     ],
     "userPermissions": []
   },
-  "id": "Customer_customers",
+  "id": "Customer_js_cus_wrap",
   "deleted": false,
-  "gitSyncId": "6675df3df6b08f7df4ca1fbd_fe4d3cff-9abf-4863-b4fa-e52df4163fa4"
+  "gitSyncId": "6675df3df6b08f7df4ca1fbd_85db40cf-21be-4ebe-acee-3a5af4c1ec15"
 }

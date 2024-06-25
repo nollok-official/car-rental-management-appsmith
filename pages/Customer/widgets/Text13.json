@@ -9,10 +9,9 @@
     "dynamicBindingPathList": [
         {"key": "truncateButtonColor"},
         {"key": "fontFamily"},
-        {"key": "borderRadius"},
-        {"key": "text"}
+        {"key": "borderRadius"}
     ],
-    "text": "Image Qid front :{{\"\\n\" +js_customer_utils.fetch_document(\"1\",\"qid\",\"front.jpg\").data}}",
+    "text": "",
     "disableLink": false,
     "textAlign": "LEFT",
     "dynamicHeight": "AUTO_HEIGHT",
@@ -33,7 +32,7 @@
     ],
     "isLoading": false,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 79,
+    "originalBottomRow": 78,
     "fontSize": "1rem",
     "needsErrorInfo": false,
     "mobileBottomRow": 78,
@@ -44,7 +43,7 @@
         "paragraph",
         "label"
     ],
-    "bottomRow": 79,
+    "bottomRow": 78,
     "parentRowSpace": 10,
     "hideCard": false,
     "mobileRightColumn": 33,

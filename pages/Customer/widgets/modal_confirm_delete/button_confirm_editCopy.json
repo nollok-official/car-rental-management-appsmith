@@ -4,7 +4,7 @@
     "boxShadow": "none",
     "mobileBottomRow": 22,
     "widgetName": "button_confirm_editCopy",
-    "onClick": "{{sql_delete_customer.run({\n  // \"key\": \"value\",\n  \"customer_id\": customer_table.triggeredRow.customer_id\n}).then(() => {\n  showAlert('Customer deleted successfully \"' + customer_table.triggeredRow.name + '\"', 'success');\n  // \"key\": \"value\",\n  sql_fetch_all_customers.run();\n});}}",
+    "onClick": "{{sql_delete_customer.run({\n  // \"key\": \"value\",\n  \"customer_id\": customers_table.triggeredRow.customer_id\n}).then(() => {\n  showAlert('Customer deleted successfully \"' + customers_table.triggeredRow.name + '\"', 'success');\n  // \"key\": \"value\",\n  sql_fetch_all_customers.run();\n});}}",
     "buttonColor": "#b91c1c",
     "dynamicPropertyPathList": [],
     "displayName": "Button",

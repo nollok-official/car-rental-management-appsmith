@@ -154,7 +154,7 @@
     "thumbnailSVG": "/static/media/thumbnail.902d280515fd575657e8ccf99545112b.svg",
     "widgetId": "vd8mhp3s3o",
     "defaultTab": "Contacts",
-    "onTabSelected": "{{js_customer_utils.fetch_customer_contacts(customer_table.selectedRow.customer_id);}}",
+    "onTabSelected": "{{js_customer_utils.fetch_customer_contacts(customers_table.selectedRow.customer_id);}}",
     "minWidth": 450,
     "tabsObj": {
         "tab1": {

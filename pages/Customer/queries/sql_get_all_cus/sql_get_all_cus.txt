@@ -1,0 +1,3 @@
+SELECT * FROM public."customers" 
+LIMIT {{this.params.limit}}
+OFFSET {{this.params.offset}};

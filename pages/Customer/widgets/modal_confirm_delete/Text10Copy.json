@@ -29,7 +29,7 @@
     ],
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "You are about to delete the details  for customer {{customer_table.triggeredRow.name}} (ID {{customer_table.triggeredRow.customer_id}})\n\nThis is irreversible!!",
+    "text": "You are about to delete the details  for customer {{customers_table.triggeredRow.name}} (ID {{customers_table.triggeredRow.customer_id}})\n\nThis is irreversible!!",
     "key": "3hhdrgtd6y",
     "isDeprecated": false,
     "rightColumn": 59,
