@@ -1,2 +1,2 @@
-SELECT * FROM customer_contacts 
-WHERE customer_id = {{this.params.customerID}};
+SELECT * FROM public.customer_contacts 
+WHERE customer_id = {{this.params.customer_id}};

@@ -1,6 +1,18 @@
 {
   "pages": [
     {
+      "id": "View Applications",
+      "isDefault": false
+    },
+    {
+      "id": "Login",
+      "isDefault": false
+    },
+    {
+      "id": "User Managment",
+      "isDefault": false
+    },
+    {
       "id": "Customer",
       "isDefault": true
     },
@@ -23,11 +35,28 @@
     {
       "id": "Rentals",
       "isDefault": false
+    },
+    {
+      "id": "Page1",
+      "isDefault": false
     }
   ],
   "viewMode": false,
   "appIsExample": false,
   "unreadCommentThreads": 0,
+  "unpublishedApplicationDetail": {
+    "navigationSetting": {
+      "showNavbar": true,
+      "orientation": "side",
+      "navStyle": "sidebar",
+      "position": "static",
+      "itemStyle": "text",
+      "colorStyle": "light",
+      "logoAssetId": "",
+      "logoConfiguration": "logoAndApplicationTitle",
+      "showSignIn": true
+    }
+  },
   "color": "#FFEFDB",
   "icon": "car",
   "unpublishedAppLayout": {
@@ -39,6 +68,12 @@
   "unpublishedCustomJSLibs": [
     {
       "uidString": "xmlParser_https://cdnjs.cloudflare.com/ajax/libs/fast-xml-parser/3.17.5/parser.min.js"
+    },
+    {
+      "uidString": "jsonwebtoken_/libraries/jsonwebtoken@8.5.1.js"
+    },
+    {
+      "uidString": "dcodeIO_https://cdn.jsdelivr.net/npm/bcryptjs@2.4.3/dist/bcrypt.min.js"
     }
   ],
   "publishedCustomJSLibs": [],

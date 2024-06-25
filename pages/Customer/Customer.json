@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 960,
+          "bottomRow": 1370,
           "containerStyle": "none",
           "snapRows": 124,
           "parentRowSpace": 1,
@@ -29,18 +29,55 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Customer_sql_fetch_all_customers",
-              "name": "sql_fetch_all_customers",
+              "id": "Customer_sql_fetch_customer_with_pfp",
+              "name": "sql_fetch_customer_with_pfp",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
-              "jsonPathKeys": [],
+              "jsonPathKeys": [
+                "(this.params.pageNo-1) * this.params.pageSize",
+                "this.params.pageSize"
+              ],
               "timeoutInMillisecond": 10000
             }
           ],
           [
             {
-              "id": "Customer_sql_fetch_customer_count",
-              "name": "sql_fetch_customer_count",
+              "id": "Customer_js_customer_utils.fetch_customer_contacts",
+              "name": "js_customer_utils.fetch_customer_contacts",
+              "collectionId": "Customer_js_customer_utils",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async pcustomer_id => {\n  return sql_fetch_customer_contacts.run({\n    \"customer_id\": pcustomer_id\n  });\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Customer_js_customer_utils.fetch_document",
+              "name": "js_customer_utils.fetch_document",
+              "collectionId": "Customer_js_customer_utils",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async (pcustomer_id = 1, pdocument_type = \"qid\", pdocument_name = \"front.jpg\") => {\n  const response = await s3_read_customer_document.run({\n    \"customer_id\": pcustomer_id,\n    \"document_type\": pdocument_type,\n    \"document_name\": pdocument_name\n  });\n  return response;\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Customer_sql_get_active_customer_count",
+              "name": "sql_get_active_customer_count",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Customer_sql_get_total_customer_count",
+              "name": "sql_get_total_customer_count",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],

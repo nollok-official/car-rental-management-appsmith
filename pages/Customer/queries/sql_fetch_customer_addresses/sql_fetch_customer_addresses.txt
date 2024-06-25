@@ -1,3 +1,0 @@
-SELECT * FROM customer_addresses AS ca
-WHERE ca.customer_id = {{this.params.customerID}}
-AND ca.customer_address_type = {{this.params.address_type}};

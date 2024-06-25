@@ -1,2 +1,0 @@
-SELECT * FROM customer_documents 
-WHERE customer_id = {{this.params.customerID}};

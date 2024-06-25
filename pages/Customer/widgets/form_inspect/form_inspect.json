@@ -9,7 +9,7 @@
     "iconSVG": "/static/media/icon.b5185d0532af5856eedbf89336c549ae.svg",
     "searchTags": ["group"],
     "topRow": 0,
-    "bottomRow": 36,
+    "bottomRow": 137,
     "parentRowSpace": 10,
     "type": "FORM_WIDGET",
     "hideCard": false,
@@ -30,7 +30,7 @@
         "widgetName": "Canvas10",
         "displayName": "Canvas",
         "topRow": 0,
-        "bottomRow": 360,
+        "bottomRow": 1370,
         "parentRowSpace": 1,
         "type": "CANVAS_WIDGET",
         "canExtend": false,
@@ -79,7 +79,7 @@
     "isDeprecated": false,
     "rightColumn": 62,
     "thumbnailSVG": "/static/media/thumbnail.3e92e6e159c53c6046da08eae3732a97.svg",
-    "dynamicHeight": "AUTO_HEIGHT_WITH_LIMITS",
+    "dynamicHeight": "FIXED",
     "widgetId": "f7cik3zvn7",
     "onCanvasUI": {
         "focusBGCSSVar": "--on-canvas-ui-widget-focus",
@@ -96,10 +96,8 @@
     "isLoading": false,
     "mobileTopRow": 0,
     "responsiveBehavior": "fill",
-    "originalTopRow": 0,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "mobileLeftColumn": 36,
-    "maxDynamicHeight": 55,
-    "originalBottomRow": 36,
-    "minDynamicHeight": 36
+    "maxDynamicHeight": 53,
+    "minDynamicHeight": 52
 }

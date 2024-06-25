@@ -18,11 +18,11 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT * FROM customer_contacts \nWHERE customer_id = {{this.params.customerID}};\n",
+      "body": "SELECT * FROM public.customer_contacts \nWHERE customer_id = {{this.params.customer_id}};",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
-          "value": true
+          "value": false
         }
       ]
     },
@@ -36,15 +36,15 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "this.params.customerID"
+      "this.params.customer_id"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2024-06-23T01:00:50Z"
+    "createdAt": "2024-06-24T22:26:36Z"
   },
   "id": "Customer_sql_fetch_customer_contacts",
   "deleted": false,
-  "gitSyncId": "6675df3df6b08f7df4ca1fbd_9ab0b2b2-4bf5-4086-9ad2-d3f1a274335b"
+  "gitSyncId": "6675df3df6b08f7df4ca1fbd_97ad0550-d904-47f2-9b2c-e0939fec1bc2"
 }
