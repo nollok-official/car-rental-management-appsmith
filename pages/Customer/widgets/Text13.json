@@ -9,9 +9,10 @@
     "dynamicBindingPathList": [
         {"key": "truncateButtonColor"},
         {"key": "fontFamily"},
-        {"key": "borderRadius"}
+        {"key": "borderRadius"},
+        {"key": "text"}
     ],
-    "text": "",
+    "text": "{{js_cus_wrap.documents.pfp}}",
     "disableLink": false,
     "textAlign": "LEFT",
     "dynamicHeight": "AUTO_HEIGHT",
@@ -32,7 +33,7 @@
     ],
     "isLoading": false,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 78,
+    "originalBottomRow": 85,
     "fontSize": "1rem",
     "needsErrorInfo": false,
     "mobileBottomRow": 78,

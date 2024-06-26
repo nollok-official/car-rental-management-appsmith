@@ -49,7 +49,7 @@
     "labelPosition": "Left",
     "key": "aap6d3du87",
     "labelTextSize": "0.875rem",
-    "defaultDate": "{{customers_table.selectedRow.dob}}",
+    "defaultDate": "{{customers_table.selectedRow.customer_dob}}",
     "isDeprecated": false,
     "rightColumn": 62,
     "thumbnailSVG": "/static/media/thumbnail.6f2ddea04e74f31810326bef3bc239b8.svg",

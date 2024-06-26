@@ -71,6 +71,6 @@
     "maxDynamicHeight": 9000,
     "shouldAllowAutofill": false,
     "iconAlign": "left",
-    "defaultText": "{{customers_table.selectedRow.qid}}",
+    "defaultText": "{{customers_table.selectedRow.customer_qid}}",
     "minDynamicHeight": 4
 }

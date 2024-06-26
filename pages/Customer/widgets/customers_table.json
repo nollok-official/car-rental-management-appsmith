@@ -6,6 +6,7 @@
     "iconSVG": "/static/media/icon.c4395b694ca4b5a84741345b057b6866.svg",
     "topRow": 12,
     "isSortable": true,
+    "onPageChange": "{{js_utils.get_all_cus_with_pfp();}}",
     "type": "TABLE_WIDGET_V2",
     "inlineEditingSaveOption": "ROW_LEVEL",
     "animateLoading": true,
@@ -28,7 +29,8 @@
         {"key": "primaryColumns.customer_nationality.computedValue"},
         {"key": "primaryColumns.customer_gender.computedValue"},
         {"key": "primaryColumns.customer_creation_date.computedValue"},
-        {"key": "primaryColumns.pfp.computedValue"}
+        {"key": "primaryColumns.pfp.computedValue"},
+        {"key": "totalRecordsCount"}
     ],
     "needsHeightForContent": true,
     "leftColumn": 0,
@@ -48,7 +50,7 @@
     "isVisible": true,
     "enableClientSideSearch": true,
     "version": 2,
-    "totalRecordsCount": 0,
+    "totalRecordsCount": "{{sql_get_cus_no.data[0].count}}",
     "tags": [
         "Suggested",
         "Display"
@@ -78,19 +80,20 @@
         }
     },
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "columnUpdatedAt": 1719346821627,
+    "columnUpdatedAt": 1719394073716,
     "originalBottomRow": 60,
+    "primaryColumnId": "customer_id",
     "defaultSelectedRowIndices": [0],
     "needsErrorInfo": false,
     "mobileBottomRow": 55,
     "widgetName": "customers_table",
     "defaultPageSize": 0,
     "columnOrder": [
+        "customer_id",
         "customer_name",
         "customer_qid",
         "customer_status",
         "customer_passport",
-        "customer_id",
         "customer_joined_date",
         "document_type",
         "document_name",
@@ -99,16 +102,19 @@
         "customer_gender",
         "customer_creation_date",
         "pfp",
-        "customColumn2",
         "customColumn1"
     ],
-    "dynamicPropertyPathList": [{"key": "tableData"}],
+    "dynamicPropertyPathList": [
+        {"key": "tableData"},
+        {"key": "onPageChange"}
+    ],
     "compactMode": "DEFAULT",
     "displayName": "Table",
     "bottomRow": 60,
     "columnWidthMap": {
         "joined_date": 152,
-        "name": 121
+        "name": 121,
+        "customer_id": 60
     },
     "parentRowSpace": 10,
     "hideCard": false,
@@ -116,7 +122,8 @@
     "parentColumnSpace": 16.0625,
     "dynamicTriggerPathList": [
         {"key": "onRowSelected"},
-        {"key": "primaryColumns.customColumn1.onClick"}
+        {"key": "primaryColumns.customColumn1.onClick"},
+        {"key": "onPageChange"}
     ],
     "borderWidth": "1",
     "primaryColumns": {
@@ -252,39 +259,6 @@
             "enableFilter": true,
             "sticky": "",
             "originalId": "customer_passport",
-            "currencyCode": "USD",
-            "verticalAlignment": "CENTER"
-        },
-        "customColumn2": {
-            "computedValue": "",
-            "isEditable": false,
-            "notation": "standard",
-            "alias": "customColumn2",
-            "enableSort": true,
-            "isSaveVisible": true,
-            "id": "customColumn2",
-            "isDisabled": false,
-            "allowSameOptionsInNewRow": true,
-            "validation": {},
-            "isCellVisible": true,
-            "isDerived": true,
-            "textSize": "0.875rem",
-            "buttonStyle": "rgb(3, 179, 101)",
-            "allowCellWrapping": false,
-            "index": 10,
-            "isDiscardVisible": true,
-            "isVisible": true,
-            "label": "customColumn2",
-            "labelColor": "#FFFFFF",
-            "columnType": "text",
-            "thousandSeparator": true,
-            "horizontalAlignment": "LEFT",
-            "isCellEditable": false,
-            "decimals": 0,
-            "width": 150,
-            "enableFilter": true,
-            "sticky": "",
-            "originalId": "customColumn2",
             "currencyCode": "USD",
             "verticalAlignment": "CENTER"
         },
@@ -497,8 +471,8 @@
             "allowCellWrapping": false,
             "index": 0,
             "isDiscardVisible": true,
-            "isVisible": false,
-            "label": "customer_id",
+            "isVisible": true,
+            "label": "ID",
             "fontStyle": "",
             "textColor": "",
             "columnType": "number",
@@ -611,7 +585,7 @@
             "verticalAlignment": "CENTER"
         }
     },
-    "onRowSelected": "{{storeValue('selected_customer_id', customers_table.selectedRow.customer_id, false).then(() => {});}}",
+    "onRowSelected": "{{js_cus_wrap.init(customers_table.selectedRow.customer_id);\njs_cus_wrap.fetch_pfp().then(()=>showAlert(\"Success fetching pfp\",\"success\"));}}",
     "key": "dfl6rpes6r",
     "canFreezeColumn": true,
     "isDeprecated": false,
@@ -624,7 +598,7 @@
     "label": "Data",
     "searchKey": "",
     "parentId": "0",
-    "serverSidePaginationEnabled": false,
+    "serverSidePaginationEnabled": true,
     "renderMode": "CANVAS",
     "mobileTopRow": 27,
     "horizontalAlignment": "LEFT",

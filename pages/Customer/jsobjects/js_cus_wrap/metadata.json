@@ -8,11 +8,11 @@
     "archivedActions": [],
     "variables": [
       {
-        "name": "myVar1",
-        "value": "[]"
+        "name": "customer_id",
+        "value": "1"
       },
       {
-        "name": "myVar2",
+        "name": "documents",
         "value": "{}"
       }
     ],
@@ -20,5 +20,5 @@
   },
   "id": "Customer_js_cus_wrap",
   "deleted": false,
-  "gitSyncId": "6675df3df6b08f7df4ca1fbd_85db40cf-21be-4ebe-acee-3a5af4c1ec15"
+  "gitSyncId": "6675df3df6b08f7df4ca1fbd_6d50c560-f477-4c0f-bd45-1df925ed4526"
 }

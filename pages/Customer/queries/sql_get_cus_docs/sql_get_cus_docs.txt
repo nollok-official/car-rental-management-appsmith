@@ -1,4 +1,6 @@
 SELECT * 
-FROM public."car_documents" 
-WHERE customer_id = {{this.params.customer_id}}
-AND document_type = {{this.params.document_type}};
+FROM public."customer_documents" 
+WHERE customer_id = '{{this.params.customer_id}}'
+AND customer_document_type = '{{this.params.document_type}}'
+ORDER BY customer_document_creation_date ASC
+LIMIT {{this.params.limit}};

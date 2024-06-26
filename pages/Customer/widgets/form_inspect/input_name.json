@@ -70,6 +70,6 @@
     "mobileLeftColumn": 23,
     "maxDynamicHeight": 9000,
     "iconAlign": "left",
-    "defaultText": "{{customers_table.selectedRow.name}}",
+    "defaultText": "{{customers_table.selectedRow.customer_name}}",
     "minDynamicHeight": 4
 }

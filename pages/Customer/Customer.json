@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1370,
+          "bottomRow": 780,
           "containerStyle": "none",
           "snapRows": 124,
           "parentRowSpace": 1,
@@ -29,30 +29,6 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Customer_js_customer_utils.fetch_customer_contacts",
-              "name": "js_customer_utils.fetch_customer_contacts",
-              "collectionId": "Customer_js_customer_utils",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async pcustomer_id => {\n  return sql_fetch_customer_contacts.run({\n    \"customer_id\": pcustomer_id\n  });\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Customer_js_customer_utils.fetch_document",
-              "name": "js_customer_utils.fetch_document",
-              "collectionId": "Customer_js_customer_utils",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async (pcustomer_id = 1, pdocument_type = \"qid\", pdocument_name = \"front.jpg\") => {\n  const response = await s3_read_customer_document.run({\n    \"customer_id\": pcustomer_id,\n    \"document_type\": pdocument_type,\n    \"document_name\": pdocument_name\n  });\n  return response;\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
               "id": "Customer_s3_read_customer_document",
               "name": "s3_read_customer_document",
               "confirmBeforeExecute": false,
@@ -67,6 +43,17 @@
           ],
           [
             {
+              "id": "Customer_js_utils.get_all_cus_with_pfp",
+              "name": "js_utils.get_all_cus_with_pfp",
+              "collectionId": "Customer_js_utils",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  const customers = await sql_get_all_cus_with_pfp.run({\n    \"limit\": customers_table.pageSize,\n    \"offset\": customers_table.pageOffset\n  });\n  const mapped_customers = await Promise.all(customers.map(async customer => {\n    if (!(customer.document_type && customer.document_name)) {\n      customer.pfp = null;\n      return customer;\n    }\n    try {\n      await s3_read_customer_document.run({\n        \"customer_id\": 1,\n        \"document_type\": \"qid\",\n        \"document_name\": \"front.jpg\"\n      });\n      customer.pfp = s3_read_customer_document.data.fileData;\n      return customer;\n    } catch {\n      customer.pfp = null;\n      return customer;\n    }\n  }));\n  return mapped_customers;\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
               "id": "Customer_sql_get_active_cus_no",
               "name": "sql_get_active_cus_no",
               "confirmBeforeExecute": false,
@@ -80,19 +67,6 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Customer_js_utils.get_all_cus_with_pfp",
-              "name": "js_utils.get_all_cus_with_pfp",
-              "collectionId": "Customer_js_utils",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async () => {\n  const customers = await sql_get_all_cus_with_pfp.run({\n    \"limit\": customers_table.pageSize,\n    \"offset\": customers_table.pageOffset\n  });\n  const mapped_customers = await Promise.all(customers.map(async customer => {\n    if (!(customer.document_type && customer.document_name)) {\n      customer.pfp = null;\n      return customer;\n    }\n    try {\n      await s3_read_customer_document.run({\n        \"customer_id\": 1,\n        \"document_type\": \"qid\",\n        \"document_name\": \"front.jpg\"\n      });\n      customer.pfp = s3_read_customer_document.data.fileData;\n      return customer;\n    } catch {\n      customer.pfp = null;\n      return customer;\n    }\n  }));\n  return mapped_customers;\n}"
-              ],
               "timeoutInMillisecond": 10000
             }
           ]

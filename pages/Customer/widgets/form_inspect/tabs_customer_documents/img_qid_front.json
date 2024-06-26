@@ -16,14 +16,11 @@
     "dynamicTriggerPathList": [],
     "imageShape": "RECTANGLE",
     "leftColumn": 1,
-    "dynamicBindingPathList": [
-        {"key": "borderRadius"},
-        {"key": "image"}
-    ],
+    "dynamicBindingPathList": [{"key": "borderRadius"}],
     "defaultImage": "https://assets.appsmith.com/widgets/default.png",
     "flexVerticalAlignment": "start",
     "key": "syybije8hd",
-    "image": "{{js_customer_utils.fetch_document.data.fileData}}",
+    "image": "",
     "isDeprecated": false,
     "rightColumn": 37,
     "objectFit": "cover",

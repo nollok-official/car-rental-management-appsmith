@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "myFun2",
-    "fullyQualifiedName": "js_cus_wrap.myFun2",
+    "name": "fetch_qid_back",
+    "fullyQualifiedName": "js_cus_wrap.fetch_qid_back",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -23,7 +23,6 @@
       "jsArguments": []
     },
     "executeOnLoad": false,
-    "clientSideExecution": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -36,9 +35,9 @@
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2024-06-25T19:05:18Z"
+    "createdAt": "2024-06-26T09:48:40Z"
   },
-  "id": "Customer_js_cus_wrap.myFun2",
+  "id": "Customer_js_cus_wrap.fetch_qid_back",
   "deleted": false,
-  "gitSyncId": "6675df3df6b08f7df4ca1fbd_636afb2d-b7b3-400a-b350-f23ae1c65ba2"
+  "gitSyncId": "6675df3df6b08f7df4ca1fbd_c8ca7e1c-805e-407c-9c3c-344dd65affd8"
 }

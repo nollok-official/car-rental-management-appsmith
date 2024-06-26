@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "myFun1",
-    "fullyQualifiedName": "js_cus_wrap.myFun1",
+    "name": "fetch_license_front",
+    "fullyQualifiedName": "js_cus_wrap.fetch_license_front",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -23,7 +23,6 @@
       "jsArguments": []
     },
     "executeOnLoad": false,
-    "clientSideExecution": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -36,9 +35,9 @@
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2024-06-25T19:05:18Z"
+    "createdAt": "2024-06-26T09:48:40Z"
   },
-  "id": "Customer_js_cus_wrap.myFun1",
+  "id": "Customer_js_cus_wrap.fetch_license_front",
   "deleted": false,
-  "gitSyncId": "6675df3df6b08f7df4ca1fbd_2f7609f2-7a5f-4a5a-850c-cfac79d05d9f"
+  "gitSyncId": "6675df3df6b08f7df4ca1fbd_fec516b6-ce70-4473-adff-9dbec0462625"
 }

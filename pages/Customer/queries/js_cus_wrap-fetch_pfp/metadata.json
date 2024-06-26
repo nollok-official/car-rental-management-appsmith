@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "fetch_document",
-    "fullyQualifiedName": "js_customer_utils.fetch_document",
+    "name": "fetch_pfp",
+    "fullyQualifiedName": "js_cus_wrap.fetch_pfp",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,25 +14,15 @@
       "userPermissions": []
     },
     "pageId": "Customer",
-    "collectionId": "Customer_js_customer_utils",
+    "collectionId": "Customer_js_cus_wrap",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
-      "jsArguments": [
-        {
-          "name": "pcustomer_id"
-        },
-        {
-          "name": "pdocument_type"
-        },
-        {
-          "name": "pdocument_name"
-        }
-      ]
+      "jsArguments": []
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -45,9 +35,9 @@
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2024-06-24T21:47:49Z"
+    "createdAt": "2024-06-26T09:48:40Z"
   },
-  "id": "Customer_js_customer_utils.fetch_document",
+  "id": "Customer_js_cus_wrap.fetch_pfp",
   "deleted": false,
-  "gitSyncId": "6675df3df6b08f7df4ca1fbd_745d9451-e940-4089-9659-db2453651cc9"
+  "gitSyncId": "6675df3df6b08f7df4ca1fbd_7d644a38-dbaf-4aa5-aad9-c45db2719146"
 }

@@ -20,7 +20,7 @@
         {"key": "borderRadius"},
         {"key": "defaultImage"}
     ],
-    "defaultImage": "{{filepicker_customer_pfp.files[0]?  filepicker_customer_pfp.files[0].data:\ncustomers_table.selectedRow.pfp ||\n'https://assets.appsmith.com/widgets/default.png'}}",
+    "defaultImage": "{{filepicker_customer_pfp.files[0]?  filepicker_customer_pfp.files[0].data:\njs_cus_wrap.documents.pfp ||\n'https://assets.appsmith.com/widgets/default.png'}}",
     "flexVerticalAlignment": "start",
     "key": "sdl8lmesze",
     "image": "",

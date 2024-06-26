@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "fetch_customer_contacts",
-    "fullyQualifiedName": "js_customer_utils.fetch_customer_contacts",
+    "name": "init",
+    "fullyQualifiedName": "js_cus_wrap.init",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,7 +14,7 @@
       "userPermissions": []
     },
     "pageId": "Customer",
-    "collectionId": "Customer_js_customer_utils",
+    "collectionId": "Customer_js_cus_wrap",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -26,7 +26,7 @@
         }
       ]
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -39,9 +39,9 @@
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2024-06-24T22:30:13Z"
+    "createdAt": "2024-06-26T09:49:19Z"
   },
-  "id": "Customer_js_customer_utils.fetch_customer_contacts",
+  "id": "Customer_js_cus_wrap.init",
   "deleted": false,
-  "gitSyncId": "6675df3df6b08f7df4ca1fbd_296a2315-83e3-4eb6-b002-bec6a543074d"
+  "gitSyncId": "6675df3df6b08f7df4ca1fbd_aa470d49-c488-487c-a091-e8aeaadbf7ca"
 }

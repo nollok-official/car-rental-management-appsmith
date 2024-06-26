@@ -4,6 +4,7 @@ cd.customer_document_name as document_name
 FROM customers as c 
 LEFT JOIN customer_documents as cd
 ON cd.customer_id = c.customer_id
-AND cd.customer_document_type = 'Passport'
+AND cd.customer_document_type = 'Pfp'
+ORDER BY customer_id ASC
 LIMIT {{this.params.limit}}
 OFFSET {{this.params.offset}};

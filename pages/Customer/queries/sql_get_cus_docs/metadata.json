@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT * \nFROM public.\"car_documents\" \nWHERE customer_id = {{this.params.customer_id}}\nAND document_type = {{this.params.document_type}};",
+      "body": "SELECT * \nFROM public.\"customer_documents\" \nWHERE customer_id = '{{this.params.customer_id}}'\nAND customer_document_type = '{{this.params.document_type}}'\nORDER BY customer_document_creation_date ASC\nLIMIT {{this.params.limit}};",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -37,7 +37,8 @@
     "messages": [],
     "jsonPathKeys": [
       "this.params.customer_id",
-      "this.params.document_type"
+      "this.params.document_type",
+      "this.params.limit"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

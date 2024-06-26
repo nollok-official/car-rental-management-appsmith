@@ -1,3 +1,4 @@
 SELECT * FROM public."customers" 
+ORDER BY customer_id ASC
 LIMIT {{this.params.limit}}
 OFFSET {{this.params.offset}};

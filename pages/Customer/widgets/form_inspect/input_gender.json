@@ -6,7 +6,7 @@
     "labelWidth": "8",
     "type": "SELECT_WIDGET",
     "serverSideFiltering": false,
-    "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( customers_table.selectedRow.gender))(input_gender.options, input_gender.serverSideFiltering) }}",
+    "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( customers_table.selectedRow.customer_gender))(input_gender.options, input_gender.serverSideFiltering) }}",
     "animateLoading": true,
     "leftColumn": 23,
     "dynamicBindingPathList": [
